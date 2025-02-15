@@ -1,0 +1,13 @@
+已部署 Github Copilot 配置美国服务器地址：https://deepseek.ddlink.asia （明年4月到期）
+推荐使用新加坡甲骨文服务器
+感谢 @eros 提供的甲骨文服务器，让服务更长久：
+新加坡甲骨文配置地址：https://copilot.ddlink.asia 将下文配置中 deepseek.ddlink.asia 全部替换位 copilot.ddlink.asia 即可切换到甲骨文服务器上
+
+方案优势：
+
+:sparkles: Chat 模型采用DeepSeek
+:sparkles: Code模型使用DeepSeek
+:sparkles: 不收费，纯公益
+:sparkles: 彻底告别不稳定的 Github Copilo 付费拼车
+:sparkles: 如果你是付费使用此项目那么你就被坑了！
+---- 我是副本
