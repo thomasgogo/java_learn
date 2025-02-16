@@ -13,5 +13,16 @@ public class NewMain {
 
         student2.study();
         student2.sleep();
+
+        Color color1 = Color.RED;
+        Color color2 = Color.RED;
+
+        System.out.println(color1 == color2);
+        System.out.println(color1.equals(color2));
+        System.out.println(color1.compareTo(color2));
+
+        for(Color color: Color.values()) {
+            System.out.println(color);
+        }
     }
 }
