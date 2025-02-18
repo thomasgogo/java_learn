@@ -13,5 +13,9 @@ public class NewMain {
 
         student2.study();
         student2.sleep();
+
+        Season currentSeason = Season.SUMMER;
+        System.out.println("当前季节是: " + currentSeason);
+
     }
 }
