@@ -1,3 +1,4 @@
+import javax.lang.model.element.Element;
 import java.util.*;
 
 public class NewStructData {
@@ -49,7 +50,17 @@ public class NewStructData {
         int value1 = dictionary.get("Java");
         System.out.println("value1 is " + value1);
 
+        Enumeration<?> keys = dictionary.keys();
+        while(keys.hasMoreElements()) {
+            String key = (String) keys.nextElement();
+            Integer value3 = dictionary.get(key);
+            System.out.println("key is " + key + " value is " + value3);
+        }
 
+        Enumeration<?> values = dictionary.elements();
+        while (values.hasMoreElements()) {
+            System.out.println("value4 is " + values.nextElement());
+        }
 
 //        dictionary.remove("Python");
 
@@ -66,14 +77,19 @@ public class NewStructData {
         for (Map.Entry<String, Integer> entry : hashtable.entrySet()) {
             System.out.println("Key: " + entry.getKey() + ", Value: " + entry.getValue());
         }
+
+        // 属性(Properties) 是一种特殊的哈希表, 用于存储键值对, 其中键和值都是字符串类型.
         Properties properties = new Properties();
         properties.setProperty("language", "Java");
-        properties.setProperty("language", "Python");
+        properties.setProperty("ai", "Python");
         String value3 = properties.getProperty("language");
         System.out.println("value3 is " + value3);
 //        properties.remove("language");
         System.out.println(properties);
 
+        for(Map.Entry<Object, Object> entry: properties.entrySet()) {
+            System.out.println("Key: " + entry.getKey() + ", Value: " + entry.getValue());
+        }
 
 
 
