@@ -24,5 +24,9 @@ public class NewMain {
         for(Color color: Color.values()) {
             System.out.println(color);
         }
+
+        Season currentSeason = Season.SUMMER;
+        System.out.println("当前季节是: " + currentSeason);
+
     }
 }
